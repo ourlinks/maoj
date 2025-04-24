@@ -1,0 +1,26 @@
+.title-main{
+    color: #017FB2;
+}
+.detail2 {
+    background-image: url("../../assets/faculty.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.detail-box {
+    background-color: rgba(255, 255, 255, 0.8);
+
+  margin: 50px auto;
+    border-radius: 10px;
+
+}
+.bottom-up{
+    width: 50px;
+    height: 50px;
+    background-color:#017FB2;;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  
+    cursor: pointer;
+}

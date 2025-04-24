@@ -13,6 +13,7 @@ import Packaging from "./components/Packaging/Packaging";
 import Details from "./components/Details/Details";
 import Inspection from "./components/Inspection/Inspection";
 import Byproduct from "./components/Byproduct/Byproduct";
+import Detail from "./components/Detail/Detail";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -30,6 +31,7 @@ function App() {
           { path: "Global", element: <Global /> },
           { path: "Details/Proccessing/1", element: <Byproduct /> },
           { path: "Proccessing", element: <Proccessing /> },  
+          { path: "Detail/:collectionname/:id", element: <Detail /> },
           { path: "Details/:collectionname/:id", element: <Details /> },
           { path: "Preservation", element: <Preservation /> },
           { path: "Packaging", element: <Packaging /> },

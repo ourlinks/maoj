@@ -4,14 +4,13 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../FireBase/firebase";
 import { FidgetSpinner } from "react-loader-spinner";
 import { Link } from "react-router-dom";
-import "./FetchCollectionDocuments.css";
+import "./FetchCollectionLifeSchool";
 
-const FetchCollectionDoc = ({ collectionName, title }) => {
+const FetchCollectionLifeSchool = ({ collectionName, title }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  
   const fetchDocuments = async () => {
     try {
       const querySnapshot = await getDocs(collection(db, collectionName));
@@ -27,14 +26,13 @@ const FetchCollectionDoc = ({ collectionName, title }) => {
       setLoading(false);
     }
   };
-const dirc = (id) => {
-  if (collectionName.toLowerCase() === "processing" && id === "1") {
-    return "/Details/Proccessing/1";
-  } else {
-    return `/Details/${collectionName}/${id}`;
-  }
-
-};
+  const dirc = (id) => {
+    if (collectionName.toLowerCase() === "lifeschool" && id === "1") {
+      return "/Detail/lifeschool/1";
+    } else {
+      return `/Detail/${collectionName}/${id}`;
+    }
+  };
   useEffect(() => {
     fetchDocuments();
   }, [collectionName]);
@@ -59,24 +57,12 @@ const dirc = (id) => {
           <h3 className="mb-4 fw-bolder main-head fs-1">{title}</h3>
           <div className="row mb-5 text-center">
             {data.map((item) => (
-
-              <div key={item.id} className="col-lg-4 ">
-                <Link
-                  to = {dirc(item.id)}
-                  className="link main"
-                >
+              <div key={item.id} className="col-lg-12 ">
+                <Link to={dirc(item.id)} className="link main">
                   <div className="card mt-5 shadow p-0 rounded-3 overflow-hidden ">
-                    <img src={item.url} alt="" className=" image" />
-                    <h3>{item.title}</h3>
-                    <div className="div">
-                      <p className="see-more text-muted m-2" >
-                        {item.d1 && typeof item.dhead === "string"
-                          ? item.dhead.split(" ").slice(0, 30).join(" ") + "..."
-                          : "No description available"}
-                        <Link to={`/Details/${collectionName}/${item.id}`}>
-                          See more
-                        </Link>
-                      </p>
+                    <div className="div d-flex align-items-center">
+                      <h3 className="col-lg-6">{item.title}</h3>
+                      <img src={item.url} alt="" className=" image" />
                     </div>
                   </div>
                 </Link>
@@ -89,4 +75,4 @@ const dirc = (id) => {
   );
 };
 
-export default FetchCollectionDoc;
+export default FetchCollectionLifeSchool;

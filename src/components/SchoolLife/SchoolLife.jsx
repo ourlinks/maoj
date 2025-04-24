@@ -1,7 +1,10 @@
-import React from 'react'
-import './SchoolLife.module.css'
-export default function SchoolLife() {
+import React from "react";
+import FetchCollectionLifeSchool from "../FetchCollectionLifeSchool/FetchCollectionLifeSchool";
+import "./SchoolLife.module.css";
+const SchoolLife = () => {
   return (
-    <div>SchoolLife</div>
-  )
-}
+    <FetchCollectionLifeSchool collectionName="schoollife" title="School Life " />
+  );
+};
+
+export default SchoolLife;

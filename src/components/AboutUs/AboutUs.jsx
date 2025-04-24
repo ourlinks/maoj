@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import axois from "axios";
+import axios from "axios";
 import "./AboutUs.css";
 import img1 from "../../assets/omargh.png";
 import img2 from "../../assets/omar2.png";
 import img3 from "../../assets/amressam.png";
-import img4 from "../../assets/abdullah.png";
+import img4 from "../../assets/abdullah.jpg";
 import img5 from "../../assets/abouda.jpg";
-import img6 from "../../assets/ali.png";
+import img6 from "../../assets/ali.jpg";
 import aboutus from "../../assets/aboutus.jpg";
 import faculty from "../../assets/faculty.jpg";
 import drsamar from "../../assets/drsamar.jpg";
@@ -24,7 +24,7 @@ export default function AboutUs() {
       email: email,
       comment: comment,
     };
-    axois
+    axios
       .post(
         "https://api.sheetbest.com/sheets/1b28a2df-cd78-4331-a39a-6cda39a935ad",
         data
@@ -43,9 +43,7 @@ export default function AboutUs() {
     <>
       <div className="about pb-5">
         <div className="container ">
-          <h1 className="text-center my-4" >
-            About Us
-          </h1>
+          <h1 className="text-center my-4">About Us</h1>
           <div className="row mb-5 shadow ">
             <div className="div col-lg-6 p-0 ">
               <div
@@ -93,8 +91,8 @@ export default function AboutUs() {
             </div>
             <div className="div d-flex align-items-center col-lg-6 bg-light">
               <p className="fw-bold fs-4 text-secondary text-center ">
-                We are a team of students from the College of Fisheries and
-                Fisheries Sciences. We decided to put most of what is related to
+                We are a team of students from the faculty of aquatic and
+                fisheries science. We decided to put most of what is related to
                 our department on one site to help students research and also to
                 be a reference for everything related to manufacturing
                 processes.
@@ -126,7 +124,7 @@ export default function AboutUs() {
                   University
                 </p>
                 <p className="m-0 text-muted text-center">
-                  Vice-Dean of Faculty of Aquatic and Fisheries Sciences,
+                  Vice-Dean of Faculty of Aquatic and Fisheries Science,
                   Kafrelsheikh University
                 </p>
               </div>
@@ -167,6 +165,9 @@ export default function AboutUs() {
                 </div>
                 <h2 className="mt-3">Omar Ghoraba</h2>
                 <p className="text-muted">
+                  faculty of aquatic and fisheries science
+                </p>
+                <p className="text-muted">
                   Department of Manufacturing and Biotechnology
                 </p>
               </div>
@@ -177,6 +178,9 @@ export default function AboutUs() {
                   <img className="w-100" src={img2} alt="" />
                 </div>
                 <h2 className="mt-3">Omar Hossam</h2>
+                <p className="text-muted">
+                  faculty of aquatic and fisheries science
+                </p>
                 <p className="text-muted">
                   Department of Manufacturing and Biotechnology
                 </p>
@@ -189,6 +193,9 @@ export default function AboutUs() {
                 </div>
                 <h2 className="mt-3">Amr Essam</h2>
                 <p className="text-muted">
+                  faculty of aquatic and fisheries science
+                </p>
+                <p className="text-muted">
                   Department of Manufacturing and Biotechnology
                 </p>
               </div>
@@ -199,6 +206,9 @@ export default function AboutUs() {
                   <img className="w-100" src={img4} alt="" />
                 </div>
                 <h2 className="mt-3">Abdallah Mohamed</h2>
+                <p className="text-muted">
+                  faculty of aquatic and fisheries science
+                </p>
                 <p className="text-muted">
                   Department of Manufacturing and Biotechnology
                 </p>
@@ -211,6 +221,9 @@ export default function AboutUs() {
                 </div>
                 <h2 className="mt-3">Abouda Ramadan</h2>
                 <p className="text-muted">
+                  faculty of aquatic and fisheries science
+                </p>
+                <p className="text-muted">
                   Department of Manufacturing and Biotechnology
                 </p>
               </div>
@@ -221,6 +234,9 @@ export default function AboutUs() {
                   <img className="w-100" src={img6} alt="" />
                 </div>
                 <h2 className="mt-3">Ali el-hariry</h2>
+                <p className="text-muted">
+                  faculty of aquatic and fisheries science
+                </p>
                 <p className="text-muted">
                   Department of Manufacturing and Biotechnology
                 </p>
@@ -245,9 +261,9 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="contact"  >
+      <div className="contact">
         <div className="container my-5">
-          <h2 className="text-center mb-4 " >Contact Us</h2>
+          <h2 className="text-center mb-4 ">Contact Us</h2>
           <div className="row justify-content-center">
             <div className="col-lg-12 ">
               <form

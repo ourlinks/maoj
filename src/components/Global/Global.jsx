@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
+import FetchCollectionDoc from "../FetchCollectionDoc/FetchCollectionDoc";
 import "./Global.module.css";
-export default function Global() {
-  return (
-    <div>Global</div>
-  )
-}
+const Global = () => {
+  return <FetchCollectionDoc collectionName="Global" title="Global innovation" />;
+};
+
+export default Global;

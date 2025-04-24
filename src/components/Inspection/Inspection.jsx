@@ -4,7 +4,10 @@ import FetchCollectionDocuments from "../FetchCollectionDocuments/FetchCollectio
 
 const inspection = () => {
   return (
-    <FetchCollectionDocuments collectionName="inspection" title="Food Inspection" />
+    <FetchCollectionDocuments
+      collectionName="inspection"
+      title="Food Inspection"
+    />
   );
 };
 

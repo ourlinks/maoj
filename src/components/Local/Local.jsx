@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import FetchCollectionDoc from "../FetchCollectionDoc/FetchCollectionDoc";
 import "./Local.module.css";
-export default function Local() {
+const local = () => {
   return (
-    <div>Local</div>
-  )
-}
+    <FetchCollectionDoc collectionName="local" title="local innovation" />
+  );
+};
+
+export default local;

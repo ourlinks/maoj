@@ -27,11 +27,11 @@ const Details = () => {
       setLoading(false);
     }
   };
- 
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  
+
   useEffect(() => {
     fetchDocument();
   }, [id, collectionname]);
@@ -41,63 +41,45 @@ const Details = () => {
       {loading && <p>Loading document...</p>}
       {error && <p>{error}</p>}
       {data && (
-        <div className="detail p-5">
+        <div className="detail p-3 ">
           <div className="container detail-box mb-5">
             <h3 className="mb-4 text-center">
-              {" "}
               <span className="title-main fw-bold"> {data.title}</span>
             </h3>
-            <div className="row mt-5 mb-5">
-              <div className="col-lg-6">
+            <div className="row mt-5 mb-5 justify-content-center">
+              <div className="col-lg-6 mb-5">
                 <img
                   src={data.url}
                   alt={data.title}
                   className="mx-2 w-100 me-2"
                 />
               </div>
-              <div className="col-lg-6">
-                <p
-                  className="fs-3"
-                  dangerouslySetInnerHTML={{ __html: data.d1 }}
-                ></p>
-              </div>
-              <div className="col-lg-12 mt-2">
-                <p
-                  className="fs-3"
-                  dangerouslySetInnerHTML={{ __html: data.d2 }}
-                ></p>
-              </div>
-              <div className="col-lg-12 mt-2">
-                <p
-                  className="fs-3"
-                  dangerouslySetInnerHTML={{ __html: data.d3 }}
-                ></p>
-              </div>
-              <div className="col-lg-12 mt-2">
-                <p
-                  className="fs-3"
-                  dangerouslySetInnerHTML={{ __html: data.d4 }}
-                ></p>
-              </div>
+
+              <p
+                className="fs-4"
+                dangerouslySetInnerHTML={{ __html: data.d1 }}
+              ></p>
             </div>
-            <div className="text-center pb-3">
-              <a
-                href={data.link}
-                className="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer" // لتجنب بعض المشاكل الأمنية
-              >
-                Read More
-              </a>
-            </div>
+            {data.link && (
+              <div className="text-center pb-3">
+                <a
+                  href={data.link}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                >
+                  Read More
+                </a>
+              </div>
+            )}
           </div>
           <div>
             <button
               className="bottom-up "
               onClick={scrollToTop}
-              style={{ display: window.scrollY > 0 }}
+              style={{ display: window.scrollY > 0 ? "block" : "none" }}
             >
-              <i class="fa-solid fa-plane-up text-white mt-1 ms-1 fs-3"></i>
+              <i className="fa-solid fa-plane-up text-white mt-1 ms-1 fs-3"></i>
             </button>
           </div>
         </div>
