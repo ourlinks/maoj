@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/maoj/static/css/main.98e724a2.css",
+    "main.js": "/maoj/static/js/main.d5c07da0.js",
+    "static/js/453.a6a97343.chunk.js": "/maoj/static/js/453.a6a97343.chunk.js",
+    "static/media/fa.webp": "/maoj/static/media/fa.25f356c93c31524d0a16.webp",
+    "static/media/background.webp": "/maoj/static/media/background.0d7f067c00e856dc71ce.webp",
+    "static/media/aboutus.webp": "/maoj/static/media/aboutus.e54d295115e6d88b84b5.webp",
+    "static/media/ali.webp": "/maoj/static/media/ali.95d8446b80cc8310f82c.webp",
+    "static/media/fa-solid-900.ttf": "/maoj/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/abdullah.webp": "/maoj/static/media/abdullah.03a99c01a77c428ae465.webp",
+    "static/media/vision.webp": "/maoj/static/media/vision.c9ef697ec7cb4908bffb.webp",
+    "static/media/fa-brands-400.ttf": "/maoj/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/1.webp": "/maoj/static/media/1.9f515e49dab5dbb9f0e3.webp",
+    "static/media/fa-solid-900.woff2": "/maoj/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/msg.webp": "/maoj/static/media/msg.81359dc055c200c33942.webp",
+    "static/media/omar2.webp": "/maoj/static/media/omar2.4a3f80f904103c024990.webp",
+    "static/media/footerbg.webp": "/maoj/static/media/footerbg.d79fb2d5b61c4e4b4c90.webp",
+    "static/media/fa-brands-400.woff2": "/maoj/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/drahmed.webp": "/maoj/static/media/drahmed.7e9059bda7ff4dd4bf11.webp",
+    "static/media/amressam.webp": "/maoj/static/media/amressam.a3a57bcdacf8e97008e5.webp",
+    "static/media/omargh.webp": "/maoj/static/media/omargh.29db3534c1bcd1ded514.webp",
+    "static/media/faculty.webp": "/maoj/static/media/faculty.917ec40be3879bdef8a0.webp",
+    "static/media/fa-regular-400.ttf": "/maoj/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/abouda.webp": "/maoj/static/media/abouda.976de9c79f75171f8432.webp",
+    "static/media/drsamar.webp": "/maoj/static/media/drsamar.cb5737380c5bc184f1c0.webp",
+    "static/media/fa-regular-400.woff2": "/maoj/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/maoj/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/maoj/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "static/media/freshcart-logo.webp": "/maoj/static/media/freshcart-logo.ac060eb498223a5fdfb1.webp",
+    "index.html": "/maoj/index.html",
+    "main.98e724a2.css.map": "/maoj/static/css/main.98e724a2.css.map",
+    "main.d5c07da0.js.map": "/maoj/static/js/main.d5c07da0.js.map",
+    "453.a6a97343.chunk.js.map": "/maoj/static/js/453.a6a97343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98e724a2.css",
+    "static/js/main.d5c07da0.js"
+  ]
+}
