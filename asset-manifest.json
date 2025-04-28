@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/maoj/static/css/main.98e724a2.css",
-    "main.js": "/maoj/static/js/main.e3a29868.js",
+    "main.css": "/maoj/static/css/main.5b2bcc91.css",
+    "main.js": "/maoj/static/js/main.f0b4dd1d.js",
     "static/js/453.a6a97343.chunk.js": "/maoj/static/js/453.a6a97343.chunk.js",
     "static/media/fa.webp": "/maoj/static/media/fa.25f356c93c31524d0a16.webp",
     "static/media/background.webp": "/maoj/static/media/background.0d7f067c00e856dc71ce.webp",
@@ -29,12 +29,12 @@
     "static/media/fa-v4compatibility.woff2": "/maoj/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "static/media/freshcart-logo.webp": "/maoj/static/media/freshcart-logo.ac060eb498223a5fdfb1.webp",
     "index.html": "/maoj/index.html",
-    "main.98e724a2.css.map": "/maoj/static/css/main.98e724a2.css.map",
-    "main.e3a29868.js.map": "/maoj/static/js/main.e3a29868.js.map",
+    "main.5b2bcc91.css.map": "/maoj/static/css/main.5b2bcc91.css.map",
+    "main.f0b4dd1d.js.map": "/maoj/static/js/main.f0b4dd1d.js.map",
     "453.a6a97343.chunk.js.map": "/maoj/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98e724a2.css",
-    "static/js/main.e3a29868.js"
+    "static/css/main.5b2bcc91.css",
+    "static/js/main.f0b4dd1d.js"
   ]
 }
